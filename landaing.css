@@ -1,0 +1,262 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Epilogue', sans-serif;
+    font-family: 'Inter', sans-serif;
+    font-family: 'Lato', sans-serif;
+    font-family: 'Merriweather', serif;
+    font-family: 'Nunito Sans', sans-serif;
+}
+:root{
+    --masterCOlor:#075768;
+}
+.container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 150vh;
+}
+
+.hero {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    /* google font */
+    height: 80vh;
+
+}
+
+.hero img {
+    width: 550px;
+    margin-left: 250px;
+    border-radius: 15px;
+    margin-top: 30px;
+}
+
+.hero h1 {
+    font-size: 35px;
+    /* width: 400px; */
+    line-height: 1.5;
+    width: 500px;
+    font-weight: bold;
+
+}
+
+.hero p {
+    font-size: 16px;
+    /* width: 400px; */
+    /* line-height:1.2; */
+    line-height: 1.8;
+    text-align: start;
+    color: #343a40;
+    width: 500px;
+}
+
+.hero button {
+    border: none;
+    outline: none;
+    border-radius: 25px;
+    width: 150px;
+    font-weight: bold;
+    padding: 10px;
+    color: #FFFFFF;
+    background-color: #087f5b;
+    font-size: 16px;
+    text-transform: uppercase;
+    margin-top: 15px;
+    transition: all 0.2s ease-in-out;
+
+}
+
+.hero button:hover {
+    background-color: transparent;
+    color: #087f5b;
+    border: 1px solid #087f5b;
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+    transition:all 0.2s ease-in-out;
+
+
+}
+
+.second-section {
+    display: flex;
+    flex-direction: column;
+    height: 50vh;
+
+}
+
+.second-section h1 {
+    padding: 25px 0;
+    font-size: 30px;
+    font-weight: bold;
+
+
+}
+
+.parent {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr;
+    grid-column-gap: 35px;
+    grid-row-gap: 15px;
+
+}
+
+.parent .card {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    border: none;
+    outline: none;
+
+}
+
+.card img {
+    width: 35px;
+    margin: 15px 15px;
+}
+
+.card h5 {
+    font-size: larger;
+    font-weight: bold;
+    margin-left: 15px;
+}
+
+.card p {
+    font-size: larger;
+    /* font-weight: bold;    */
+    margin-left: 10px;
+}
+
+.baner {
+    background-color: #087f5b;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    /* height: 30vh; */
+    /* width: 1000px; */
+    margin-top: 55px;
+    border-radius: 10px;
+
+}
+
+.baner img {
+    width: 250px;
+    display: flex;
+    justify-content: center;
+    margin: 25px;
+    border-radius: 15px;
+}
+
+.baner .baner-info {
+    color: #ffffff;
+
+}
+
+.baner .baner-info h1 {
+    font-size: 25px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+
+/* section items */
+.items {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* align-items: center; */
+    
+   
+}
+.items h1{
+    margin: 50px 0;
+    font-size: 25px;
+    font-weight: bold;
+
+}
+
+.child {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 65px;  
+    grid-row-gap:50px;
+    /* width: 250px; */
+    
+}
+
+
+.card-cart {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    border-radius: 25px;
+    box-shadow: 5px 10px 8px #888888;
+    width: 380px;
+    height: 600px;
+    transition: all 0.2s ease-in-out;
+    
+}
+.card-cart:hover{
+    transform: scale(1.1);
+    transition: all 0.2s ease-in-out;
+
+}
+
+.card-cart>img {
+    width: 100%;
+    border-radius: 15px;
+
+}
+.card-cart h3{
+margin-left: 20px;
+margin-top: 15px;
+}
+.features{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 5px;
+}
+
+.features img{
+    width: 30px;
+    margin-left: 15px;
+    
+}
+.features h5{
+    margin-left: 15px;
+    font-size: 18px;
+
+}
+.price-button{
+    display: flex;
+    flex-direction: row;
+    margin-top: 30px;
+    justify-content: space-around;
+    align-items: center;
+    
+}
+.price-button button{
+     padding: 2px; 
+    width: 150px;
+    height: 40px;
+    border: none;
+    background-color: #087f5b;
+    color: #ffffff;
+    border-radius: 30px;
+    /* align-items: end; */
+    font-family: inherit;
+    /* font-size: 18px; */
+    font-weight: bold;
+    /* transition: all 1s ease-in-out; */
+}
+.price-button button:hover{
+/* background-color: transparent; */
+box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+
+}
